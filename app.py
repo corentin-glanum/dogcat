@@ -19,7 +19,6 @@ if app_mode == "Training":
     img_file_buffer = st.file_uploader("Choose the training set")
     model_picker = st.radio("Quel modèle utiliser?", ('AlexNet', 'AlexNet aussi'))
     st.button("Lancer l'entrainement et télécharger le modèle")
-    st.write('yo')
 elif app_mode == "Testing":
     #=================================== Title ===============================
     st.title("""
