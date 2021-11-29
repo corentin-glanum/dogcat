@@ -16,6 +16,7 @@ st.sidebar.title("What to do")
 app_mode = st.sidebar.selectbox("Choose the app mode",
     ["Training", "Testing"])
 if app_mode == "Training":
+    img_file_buffer = st.file_uploader("Choose the training set")
     st.write('yo')
 elif app_mode == "Testing":
     #=================================== Title ===============================
