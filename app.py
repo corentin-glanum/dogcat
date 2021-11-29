@@ -9,6 +9,12 @@ import os # inbuilt module
 import random # inbuilt module
 import webbrowser # inbuilt module
 
+
+
+
+st.sidebar.title("What to do")
+app_mode = st.sidebar.selectbox("Choose the app mode",
+    ["Training", "Testing"])
 #=================================== Title ===============================
 st.title("""
 Cat 🐱 Or Dog 🐶 Recognizer
