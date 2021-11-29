@@ -21,20 +21,11 @@ img_file_buffer = st.file_uploader("Upload an image here 👇🏻")
 try:
 	image = Image.open(img_file_buffer)
 	img_array = np.array(image)
-	st.write("""
-		Preview 👀 Of Given Image!
-		""")
 	if image is not None:
 	    st.image(
 	        image,
 	        use_column_width=True
 	    )
-	st.write("""
-		Now, you are just one step ahead of prediction.
-		""")
-	st.write("""
-		**Just Click The '👉🏼 Predict' Button To See The Prediction Corresponding To This Image! 😄**
-		""")
 except:
 	st.write("""
 		### ❗ Any Picture hasn't selected yet!!!
@@ -108,6 +99,3 @@ st.text("""""")
 st.text("""""")
 st.text("""""")
 st.text("""""")
-st.write("""
-### ©️ Created By Debmalya Sur
-	""")
